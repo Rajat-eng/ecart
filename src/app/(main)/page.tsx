@@ -2,6 +2,7 @@ import SiteHeader from "@/components/Layouts/site-header";
 import CarouselCompenent from "@/components/CarouselCompenent";
 import Image from "next/image";
 import MainHeading from "@/components/MainHeading";
+import ClubBannerComponent from "@/components/ClubBannerComponent";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <SiteHeader />
       <CarouselCompenent />
       <MainHeading />
+      <ClubBannerComponent />
     </main>
   );
 }
