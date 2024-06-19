@@ -12,10 +12,12 @@ import BusinessAcademy from "@/components/BusinessAcademyComponent";
 import TopEmployers from "@/components/TopEmployersComponent";
 import Footer from "@/components/Footer";
 import CityHeader from "@/components/CityHeaderComponent";
+import MainComponentHeader from "@/components/Header";
 
 export default function Home() {
   return (
-    <main className=" min-h-screen bg-layout-blue5">
+    <main className=" min-h-screen ">
+      <MainComponentHeader />
       <SiteHeader />
       <CarouselCompenent />
       <MainHeading />
