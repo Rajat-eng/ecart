@@ -218,16 +218,18 @@ const employers: Employer[] = [
 
 const TopEmployers: React.FC = () => {
   return (
-    <div className="bg-blue-900 text-white py-12 px-4">
-      <h2 className="text-3xl font-bold text-center mb-8">TOP EMPLOYERS</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4">
+      <h2 className="text-3xl font-bold text-center mb-8 text-white">
+        TOP EMPLOYERS
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 justify-items-center">
         {employers.map((employer, index) => (
           <a
             key={index}
             href={employer.websiteLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center bg-white p-2 rounded-lg shadow-lg"
+            className="flex items-center justify-center bg-white p-2 rounded-lg shadow-lg w-3/4"
           >
             <img
               src={employer.logoSrc}

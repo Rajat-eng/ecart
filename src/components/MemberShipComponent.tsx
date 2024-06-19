@@ -11,19 +11,26 @@ const Memberships: React.FC = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-center text-2xl font-bold mb-8">
+    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4 ">
+      <h1 className="text-center text-4xl font-bold mb-8 text-white">
         CXO Business Network Platform: Connecting Global
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {memberships.map((membership, index) => (
+      <div className="flex shadow-lg px-4 gap-4 justify-center flex-wrap">
+        {memberships.map((membership) => (
           <div
-            key={index}
-            className="border border-gray-300 p-4 rounded-lg shadow-lg text-center"
+            key={membership}
+            className="border-2 grid grid-rows-[minmax(200px,75%)_auto]  h-fit min-w-[400px]"
           >
-            <h2 className="text-xl font-semibold mb-2">{membership}</h2>
-            <p className="text-gray-600">Business Network</p>
-            <p className="mt-4 text-green-500 font-bold">Membership Open</p>
+            <div className="bg-yellow-200">Image</div>
+            <div className=" text-white bg-layout-blue4 ">
+              <p className="text-center">{membership}</p>
+              <p className="text-center">Business Network</p>
+
+              <div className="w-full text-center  bg-layout-blue2">
+                {" "}
+                MEMBERSHIP OPEN
+              </div>
+            </div>
           </div>
         ))}
       </div>

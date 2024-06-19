@@ -15,7 +15,7 @@ import CityHeader from "@/components/CityHeaderComponent";
 
 export default function Home() {
   return (
-    <main className=" min-h-screen ">
+    <main className=" min-h-screen bg-layout-blue5">
       <SiteHeader />
       <CarouselCompenent />
       <MainHeading />
@@ -24,7 +24,7 @@ export default function Home() {
       <Memberships />
       <GlobalSearch />
       <BoardAdvisory />
-      <BusinessEvents />
+      {/* <BusinessEvents /> */}
       <BusinessPartnerships />
       <BusinessAcademy />
       <TopEmployers />

@@ -23,21 +23,17 @@ const GlobalSearch: React.FC = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-center text-2xl font-bold mb-8 text-white bg-blue-900 p-4">
+    <div className="mx-auto w-11/12 my-8 min-h-fit bg-layout-blue4 py-4">
+      <h1 className="text-center text-2xl font-bold mb-8 text-white p-4">
         Global Search Company
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="flex flex-wrap shadow-lg h-auto px-4 gap-4 justify-center">
         {positions.map((position, index) => (
           <div
             key={index}
-            className="bg-blue-900 p-4 rounded-lg shadow-lg text-center"
+            className="bg-layout-blue4 border-2 p-2 rounded-lg shadow-lg text-center h-fit min-h-[300px] "
           >
-            <img
-              src={position.imageSrc}
-              alt={position.title}
-              className="w-full h-40 object-cover mb-4 rounded"
-            />
+            <div className="h-3/4 min-h-[200px] bg-yellow-200 ">Image</div>
             <h2 className="text-white text-xl font-semibold mb-2">
               {position.title}
             </h2>

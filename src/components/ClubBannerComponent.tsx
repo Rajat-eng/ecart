@@ -12,21 +12,8 @@ import Image from "next/image";
 
 const ClubBannerComponent = () => {
   return (
-    <div>
-      <Image
-        src={"/Images/club_banner.png"}
-        alt="image"
-        sizes="100vw"
-        // Make the image display full width
-        style={{
-          width: "100%",
-          height: "auto",
-        }}
-        width={500}
-        height={500}
-        // layout="fill"
-        // style={{ objectFit: "cover" }}
-      />
+    <div className="mt-5 w-full h-28 max-h-32 relative ">
+      <Image src={"/Images/club_banner.png"} alt="image" layout="fill" />
     </div>
   );
 };

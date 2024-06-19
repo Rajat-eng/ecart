@@ -26,38 +26,41 @@ const advisoryOptions = [
     subtitle: "CONSULTING",
     image: "/images/hr_transformational.jpg",
   },
+  {
+    title: "HR TRANSFORMATIONAL",
+    subtitle: "CONSULTING",
+    image: "/images/hr_transformational.jpg",
+  },
 ];
 
 const AdvisoryCard: React.FC<{
   option: { title: string; subtitle: string; image: string };
 }> = ({ option }) => (
-  <div className="flex flex-col items-center bg-white shadow-md rounded-lg overflow-hidden">
-    <img
-      src={option.image}
-      alt={option.title}
-      className="w-full h-48 object-cover"
-    />
-    <div className="p-4">
-      <h3 className="text-xl font-semibold">{option.title}</h3>
-      <p className="text-gray-500">{option.subtitle}</p>
-    </div>
-    <div className="flex w-full">
-      <button className="flex-1 p-2 bg-blue-500 text-white hover:bg-blue-600 transition">
-        READ MORE
-      </button>
-      <button className="flex-1 p-2 bg-blue-700 text-white hover:bg-blue-800 transition">
-        REGISTER NOW
-      </button>
+  <div className="bg-layout-blue4 shadow-md rounded-lg grid grid-rows-[minmax(200px,75%)_auto] border-4 h-fit min-w-[400px]">
+    <div className="bg-yellow-200">Image</div>
+    <div className="text-center text-white">
+      <div className="p-2">
+        <h3 className="text-xl font-semibold">{option.title}</h3>
+        <p>{option.subtitle}</p>
+      </div>
+      <div className="border-2 flex">
+        <button className="p-2 flex-1 text-white bg-layout-blue3">
+          READ MORE
+        </button>
+        <button className="p-2 flex-1 text-white bg-layout-blue2">
+          REGISTER NOW
+        </button>
+      </div>
     </div>
   </div>
 );
 
 const BoardAdvisory: React.FC = () => (
-  <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-extrabold text-gray-900 mb-6 text-center">
+  <div className="mx-auto w-11/12 my-8 h-auto bg-layout-blue4 py-4">
+    <h2 className="text-3xl font-extrabold mb-6 text-center text-white">
       BOARD ADVISORY & CONSULTING
     </h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="flex shadow-lg px-4 gap-4 h-fit justify-center flex-wrap">
       {advisoryOptions.map((option) => (
         <AdvisoryCard key={option.title} option={option} />
       ))}

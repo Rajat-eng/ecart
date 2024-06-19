@@ -29,7 +29,7 @@ const partnerships = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-blue-900 text-white py-10">
+    <footer className=" bg-layout-blue4  text-white py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
         <div>
           <h2 className="font-semibold mb-4">Quick Links</h2>

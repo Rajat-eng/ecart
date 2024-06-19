@@ -120,33 +120,34 @@ const courses: Course[] = [
 
 const BusinessAcademy: React.FC = () => {
   return (
-    <div className="bg-blue-900 text-white py-12 px-4">
-      <h2 className="text-3xl font-bold text-center mb-8">
-        VRK's BUSINESS ACADEMY
+    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4">
+      <h2 className="text-3xl font-bold text-center mb-8 text-white">
+        VRK BUSINESS ACADEMY
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 justify-items-center">
         {courses.map((course, index) => (
-          <div key={index} className="bg-blue-800 p-4 rounded-lg shadow-md">
-            <img
-              src={course.imageSrc}
-              alt={course.title}
-              className="w-full h-48 object-cover mb-4 rounded-lg"
-            />
-            <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
-            <p className="text-sm mb-4">{course.description}</p>
-            <div className="flex justify-between">
-              <a
-                href={course.readMoreLink}
-                className="text-blue-300 hover:text-blue-500"
-              >
-                READ MORE
-              </a>
-              <a
-                href={course.registerLink}
-                className="bg-blue-700 hover:bg-blue-600 text-white py-2 px-4 rounded"
-              >
-                REGISTER NOW
-              </a>
+          <div
+            key={index}
+            className="border-2 grid grid-rows-[minmax(200px,75%)_auto]  h-fit max-w-[400px] w-full"
+          >
+            <div className="bg-yellow-200">Image</div>
+            <div className="text-center text-white">
+              <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
+              <p className="text-sm mb-4">{course.description}</p>
+              <div className="flex justify-between">
+                <a
+                  href={course.readMoreLink}
+                  className="text-blue-300 hover:text-blue-500"
+                >
+                  READ MORE
+                </a>
+                <a
+                  href={course.registerLink}
+                  className="bg-blue-700 hover:bg-blue-600 text-white py-2 px-4 rounded"
+                >
+                  REGISTER NOW
+                </a>
+              </div>
             </div>
           </div>
         ))}
