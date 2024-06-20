@@ -57,7 +57,7 @@ const partnerships: Partnership[] = [
 
 const BusinessPartnerships: React.FC = () => {
   return (
-    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4">
+    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4 border-4 border-[#fbb000]">
       <h2 className="text-3xl font-bold text-center mb-8 text-white">
         BUSINESS PARTNERSHIPS & COLLABORATIONS
       </h2>

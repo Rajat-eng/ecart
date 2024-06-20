@@ -58,6 +58,7 @@ const config = {
           blue3: "var(--app-layout-color-lighter)",
           blue2: "var(--app-layout-color-blue)",
           blue1: "var(--app-layout-color-ligh-blue)",
+          golden1: "var(--app-layout-color-golden-1)",
         },
       },
       borderRadius: {

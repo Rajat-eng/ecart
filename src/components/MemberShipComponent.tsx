@@ -1,29 +1,68 @@
+import Image from "next/image";
 const Memberships: React.FC = () => {
   const memberships = [
-    "Managing Director",
-    "Chief Digital Officer",
-    "Chief Executive Officer",
-    "Chief Information Officer",
-    "Chief Marketing Officer",
-    "Chief Financial Officer",
-    "Chief Business Officer",
-    "Chief HR Officer",
+    {
+      img_src: "/Images/membership_component_images/01-MD.jpg",
+      // img_src: "/Images/c1.jpg",
+      membership_name: "Managing Director",
+    },
+    {
+      img_src: "/Images/membership_component_images/05-CDO.jpg",
+      membership_name: "Chief Digital Officer",
+    },
+
+    {
+      img_src: "/Images/membership_component_images/02-CEO.jpg",
+      membership_name: "Chief Executive Officer",
+    },
+    {
+      img_src: "/Images/membership_component_images/06-CIO.jpg",
+      membership_name: "Chief Information Officer",
+    },
+    {
+      img_src: "/Images/membership_component_images/03-CMO.jpg",
+      membership_name: "Chief Marketing Officer",
+    },
+    {
+      img_src: "/Images/membership_component_images/07-CFO.jpg",
+      membership_name: "Chief Financial Officer",
+    },
+    {
+      img_src: "/Images/membership_component_images/04-CBO.jpg",
+      membership_name: "Chief Business Officer",
+    },
+    {
+      img_src: "/Images/membership_component_images/08-CHRO.jpg",
+      membership_name: "Chief HR Officer",
+    },
   ];
 
   return (
-    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4 ">
+    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4 border-4 border-[#fbb000]">
       <h1 className="text-center text-4xl font-bold mb-8 text-white">
         CXO Business Network Platform: Connecting Global
       </h1>
       <div className="flex shadow-lg px-4 gap-4 justify-center flex-wrap">
         {memberships.map((membership) => (
           <div
-            key={membership}
+            key={membership.membership_name}
             className="border-2 grid grid-rows-[minmax(200px,75%)_auto]  h-fit min-w-[400px]"
           >
-            <div className="bg-yellow-200">Image</div>
+            <div className="bg-yellow-200">
+              <Image
+                src={membership.img_src}
+                alt="image"
+                width={0}
+                height={0}
+                sizes="15vw"
+                style={{ width: "100%", height: "auto" }} // optional
+                // style={{ objectFit: "cover" }}
+                // width={100}
+                // height={100}
+              />
+            </div>
             <div className=" text-white bg-layout-blue4 ">
-              <p className="text-center">{membership}</p>
+              <p className="text-center">{membership.membership_name}</p>
               <p className="text-center">Business Network</p>
 
               <div className="w-full text-center  bg-layout-blue2">

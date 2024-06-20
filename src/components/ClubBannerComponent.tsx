@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const ClubBannerComponent = () => {
   return (
-    <div className="mt-5 w-full h-28 max-h-32 relative ">
+    <div className="mt-5 w-full h-28 max-h-32 relative border-4 border-[#fbb000] ">
       <Image src={"/Images/club_banner.png"} alt="image" layout="fill" />
     </div>
   );

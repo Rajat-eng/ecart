@@ -1,5 +1,6 @@
 // components/BusinessAcademy.tsx
 
+import Image from "next/image";
 import React from "react";
 
 type Course = {
@@ -14,105 +15,105 @@ const courses: Course[] = [
   {
     title: "BOARD COACHING",
     description: "Board Coaching",
-    imageSrc: "/images/board-coaching.jpg", // Replace with actual image source
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "CXO COACHING",
     description: "CXO Coaching",
-    imageSrc: "/images/cxo-coaching.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "YOUNG LEADERS",
     description: "Young Leaders",
-    imageSrc: "/images/young-leaders.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "EXECUTIVE COACHING",
     description: "Executive Coaching",
-    imageSrc: "/images/executive-coaching.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "COACHING THE TRAINERS",
     description: "Coaching The Trainers",
-    imageSrc: "/images/coaching-the-trainers.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "YOU ARE A BRAND",
     description: "You Are A Brand",
-    imageSrc: "/images/you-are-a-brand.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "SELL LIKE A CHAMPION",
     description: "Sell Like A Champion",
-    imageSrc: "/images/sell-like-a-champion.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "POWER SELLING",
     description: "Power Selling",
-    imageSrc: "/images/power-selling.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "IMPACT PRESENTATIONS",
     description: "Impact Presentations",
-    imageSrc: "/images/impact-presentations.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "CUSTOMER FIRST",
     description: "Customer First",
-    imageSrc: "/images/customer-first.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "INFLUENCING OTHERS",
     description: "Influencing Others",
-    imageSrc: "/images/influencing-others.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "DECISION MAKING",
     description: "Decision Making",
-    imageSrc: "/images/decision-making.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "NEGOTIATION TECHNIQUES",
     description: "Negotiation Techniques",
-    imageSrc: "/images/negotiation-techniques.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "BUSINESS ETIQUETTES",
     description: "Business Etiquettes",
-    imageSrc: "/images/business-etiquettes.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "MANAGING COMMUNICATION",
     description: "Managing Communication",
-    imageSrc: "/images/managing-communication.jpg",
+    imageSrc: "/Images/business_academy_component_images/meeting-room.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
@@ -120,7 +121,7 @@ const courses: Course[] = [
 
 const BusinessAcademy: React.FC = () => {
   return (
-    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4">
+    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4 border-4 border-[#fbb000]">
       <h2 className="text-3xl font-bold text-center mb-8 text-white">
         VRK BUSINESS ACADEMY
       </h2>
@@ -130,7 +131,17 @@ const BusinessAcademy: React.FC = () => {
             key={index}
             className="border-2 grid grid-rows-[minmax(200px,75%)_auto]  h-fit max-w-[400px] w-full"
           >
-            <div className="bg-yellow-200">Image</div>
+            <div className="bg-yellow-200">
+              {" "}
+              <Image
+                src={course.imageSrc}
+                alt="image"
+                width={0}
+                height={0}
+                sizes="15vw"
+                style={{ width: "100%", height: "auto" }} // optional
+              />
+            </div>
             <div className="text-center text-white">
               <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
               <p className="text-sm mb-4">{course.description}</p>

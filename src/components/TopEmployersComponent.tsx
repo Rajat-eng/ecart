@@ -11,214 +11,214 @@ type Employer = {
 const employers: Employer[] = [
   {
     name: "BMW",
-    logoSrc: "/images/bmw-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.bmw.com",
   },
   {
     name: "Jaguar",
-    logoSrc: "/images/jaguar-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.jaguar.com",
   },
   {
     name: "Maruti Suzuki",
-    logoSrc: "/images/maruti-suzuki-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.marutisuzuki.com",
   },
   {
     name: "Audi",
-    logoSrc: "/images/audi-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.audi.com",
   },
   {
     name: "Rolls-Royce",
-    logoSrc: "/images/rolls-royce-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.rolls-roycemotorcars.com",
   },
   {
     name: "Volkswagen",
-    logoSrc: "/images/volkswagen-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.volkswagen.com",
   },
   {
     name: "MG",
-    logoSrc: "/images/mg-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.mgmotor.com",
   },
   {
     name: "Genpact",
-    logoSrc: "/images/genpact-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.genpact.com",
   },
   {
     name: "Birla Sun Life Insurance",
-    logoSrc: "/images/birla-sun-life-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://lifeinsurance.adityabirlacapital.com",
   },
   {
     name: "Citibank",
-    logoSrc: "/images/citibank-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.citigroup.com",
   },
   {
     name: "Coca-Cola",
-    logoSrc: "/images/coca-cola-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.coca-cola.com",
   },
   {
     name: "DishTV",
-    logoSrc: "/images/dishtv-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.dishtv.in",
   },
   {
     name: "Godfrey Phillips",
-    logoSrc: "/images/godfrey-phillips-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.godfreyphillips.com",
   },
   {
     name: "Standard Chartered",
-    logoSrc: "/images/standard-chartered-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.sc.com",
   },
   {
     name: "Tata Teleservices",
-    logoSrc: "/images/tata-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.tatateleservices.com",
   },
   {
     name: "Tata AIG Insurance",
-    logoSrc: "/images/tata-aig-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.tataaig.com",
   },
   {
     name: "Star India",
-    logoSrc: "/images/star-india-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.starindia.com",
   },
   {
     name: "Dell",
-    logoSrc: "/images/dell-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.dell.com",
   },
   {
     name: "Emaar",
-    logoSrc: "/images/emaar-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.emaar.com",
   },
   {
     name: "DLF",
-    logoSrc: "/images/dlf-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.dlf.in",
   },
   {
     name: "Gillette",
-    logoSrc: "/images/gillette-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.gillette.com",
   },
   {
     name: "HDFC Bank",
-    logoSrc: "/images/hdfc-bank-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.hdfcbank.com",
   },
   {
     name: "Hiranandani Communities",
-    logoSrc: "/images/hiranandani-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.hiranandani.com",
   },
   {
     name: "ICICI Bank",
-    logoSrc: "/images/icici-bank-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.icicibank.com",
   },
   {
     name: "InterGlobe Technologies",
-    logoSrc: "/images/interglobe-technologies-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.igt.in",
   },
   {
     name: "ING Life Insurance",
-    logoSrc: "/images/ing-life-insurance-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.ing.com",
   },
   {
     name: "IREO",
-    logoSrc: "/images/ireo-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.ireo.com",
   },
   {
     name: "Levi's",
-    logoSrc: "/images/levis-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.levi.com",
   },
   {
     name: "M3M",
-    logoSrc: "/images/m3m-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.m3m.in",
   },
   {
     name: "Modi Revlon",
-    logoSrc: "/images/modi-revlon-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.revlon.com",
   },
   {
     name: "Omaxe",
-    logoSrc: "/images/omaxe-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.omaxe.com",
   },
   {
     name: "ResBird",
-    logoSrc: "/images/resbird-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.resbird.com",
   },
   {
     name: "Pantaloons",
-    logoSrc: "/images/pantaloons-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.pantaloons.com",
   },
   {
     name: "Parsvnath",
-    logoSrc: "/images/parsvnath-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.parsvnath.com",
   },
   {
     name: "P&G",
-    logoSrc: "/images/pg-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.pg.com",
   },
   {
     name: "Hyatt",
-    logoSrc: "/images/hyatt-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.hyatt.com",
   },
   {
     name: "Spice Digital",
-    logoSrc: "/images/spice-digital-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.spicedigital.com",
   },
   {
     name: "Oriflame",
-    logoSrc: "/images/oriflame-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.oriflame.com",
   },
   {
     name: "Reliance Digital",
-    logoSrc: "/images/reliance-digital-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.reliancedigital.in",
   },
   {
     name: "Aditya Birla",
-    logoSrc: "/images/aditya-birla-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.adityabirla.com",
   },
   {
     name: "Amway",
-    logoSrc: "/images/amway-logo.png",
+    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
     websiteLink: "https://www.amway.com",
   },
 ];
 
 const TopEmployers: React.FC = () => {
   return (
-    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4">
+    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4 border-4 border-[#fbb000]">
       <h2 className="text-3xl font-bold text-center mb-8 text-white">
         TOP EMPLOYERS
       </h2>

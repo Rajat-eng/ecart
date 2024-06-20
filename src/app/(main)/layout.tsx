@@ -3,7 +3,7 @@ interface LobyLayoutProps {
   children: React.ReactNode;
 }
 const layout = ({ children }: LobyLayoutProps) => {
-  return <div>{children}</div>;
+  return <div className="bg-[#252525]">{children}</div>;
 };
 
 export default layout;
