@@ -1,5 +1,6 @@
 // components/BusinessPartnerships.tsx
 
+import Image from "next/image";
 import React from "react";
 
 type Partnership = {
@@ -14,42 +15,48 @@ const partnerships: Partnership[] = [
   {
     title: "INVESTORS CONNECT",
     description: "Business Investment Partnership",
-    imageSrc: "/images/investors-connect.jpg", // Replace with actual image source
+    imageSrc:
+      "/Images/business_partnerships_component_images/business-people-shaking-hands-together.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "MERGER & ACQUISITION",
     description: "Business Advisory & Collaboration",
-    imageSrc: "/images/merger-acquisition.jpg",
+    imageSrc:
+      "/Images/business_partnerships_component_images/agreement-urban-handshake-cooperation-support.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "FRANCHISE PARTNERSHIP",
     description: "Business Partnership",
-    imageSrc: "/images/franchise-partnership.jpg",
+    imageSrc:
+      "/Images/business_partnerships_component_images/high-angle-view-business-people-playing-jigsaw-office.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "COLLABORATION & TIE-UPS",
     description: "Business Expansion Partnership",
-    imageSrc: "/images/collaboration-tie-ups.jpg",
+    imageSrc:
+      "/Images/business_partnerships_component_images/teamwork-concept-with-hands.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "TECHNOLOGY PARTNERS",
     description: "Business Expansion Partnership",
-    imageSrc: "/images/technology-partners.jpg",
+    imageSrc:
+      "/Images/business_partnerships_component_images/modern-equipped-computer-lab.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
   {
     title: "FUNDRAISING",
     description: "Foundation",
-    imageSrc: "/images/fundraising.jpg",
+    imageSrc:
+      "/Images/business_partnerships_component_images/front-view-finance-business-elements-assortment.jpg",
     readMoreLink: "#",
     registerLink: "#",
   },
@@ -67,7 +74,16 @@ const BusinessPartnerships: React.FC = () => {
             key={index}
             className="border-2 grid grid-rows-[minmax(200px,75%)_auto]  h-fit max-w-[400px] w-full"
           >
-            <div className="bg-yellow-200">Image</div>
+            <div className="bg-yellow-200">
+              <Image
+                src={partnership.imageSrc}
+                alt="image"
+                width={0}
+                height={0}
+                sizes="15vw"
+                style={{ width: "100%", height: "auto" }} // optional
+              />
+            </div>
             <div className="text-center text-white">
               <h3 className="text-xl font-semibold mb-2">
                 {partnership.title}

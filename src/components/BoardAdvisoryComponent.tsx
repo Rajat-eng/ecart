@@ -66,7 +66,7 @@ const AdvisoryCard: React.FC<{
 );
 
 const BoardAdvisory: React.FC = () => (
-  <div className="mx-auto w-11/12 my-8 h-auto bg-layout-blue4 py-4 border-4 border-[#fbb000]">
+  <div className="mx-auto w-11/12 my-8 h-auto bg-layout-blue5 py-4 border-4 border-[#fbb000]">
     <h2 className="text-3xl font-extrabold mb-6 text-center text-white">
       BOARD ADVISORY & CONSULTING
     </h2>

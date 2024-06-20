@@ -16,12 +16,13 @@ const employers: Employer[] = [
   },
   {
     name: "Jaguar",
-    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
+    logoSrc:
+      "/Images/top_employers_component_images/jaguar-cars-logo-png-transparent.png",
     websiteLink: "https://www.jaguar.com",
   },
   {
     name: "Maruti Suzuki",
-    logoSrc: "/Images/top_employers_component_images/bmw_logo.jpg",
+    logoSrc: "/Images/top_employers_component_images/maruti.jpg",
     websiteLink: "https://www.marutisuzuki.com",
   },
   {

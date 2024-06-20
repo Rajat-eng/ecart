@@ -35,7 +35,8 @@
     --radius: 0.5rem;
 
     /* custom colors */
-    --app-layout-color-dark: #0b2441;
+    /* --app-layout-color-dark: #0b2441; */
+    --app-layout-color-dark: #021021;
     --app-layout-color-light: #0e4077;
     --app-layout-color-lighter: #0e5cb1;
     --app-layout-color-blue: #097af0;

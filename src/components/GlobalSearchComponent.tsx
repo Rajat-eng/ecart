@@ -28,7 +28,7 @@ const GlobalSearch: React.FC = () => {
   ];
 
   return (
-    <div className="mx-auto w-11/12 my-8 min-h-fit bg-layout-blue4 py-4 border-4 border-[#fbb000]">
+    <div className="mx-auto w-11/12 my-8 min-h-fit bg-layout-blue5 py-4 border-4 border-[#fbb000]">
       <h1 className="text-center text-2xl font-bold mb-8 text-white p-4">
         Global Search Company
       </h1>
