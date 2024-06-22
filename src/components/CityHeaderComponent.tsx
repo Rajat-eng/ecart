@@ -47,14 +47,14 @@ const scrollingAnimation = {
 
 const CityHeader: React.FC = () => {
   return (
-    <header>
-      <div className="bg-red-600 text-white text-sm py-2 overflow-hidden whitespace-nowrap">
+    <header className="my-8">
+      <div className="bg-red-600 text-white text-base py-2 overflow-hidden whitespace-nowrap">
         <motion.div
           className="container mx-auto flex space-x-4"
           {...scrollingAnimation}
         >
           {indianCities.map((city, index) => (
-            <span key={index} className="flex items-center">
+            <span key={index} className="flex items-center font-bold">
               {city}
               {index < indianCities.length - 1 && (
                 <span className="mx-2">|</span>
@@ -63,13 +63,13 @@ const CityHeader: React.FC = () => {
           ))}
         </motion.div>
       </div>
-      <div className="bg-blue-900 text-white text-sm py-2 overflow-hidden whitespace-nowrap">
+      <div className="bg-blue-900 text-white text-base py-2 overflow-hidden whitespace-nowrap">
         <motion.div
           className="container mx-auto flex space-x-4"
           {...scrollingAnimation}
         >
           {internationalCities.map((city, index) => (
-            <span key={index} className="flex items-center">
+            <span key={index} className="flex items-center font-bold">
               {city}
               {index < internationalCities.length - 1 && (
                 <span className="mx-2">|</span>

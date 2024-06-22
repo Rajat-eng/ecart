@@ -12,6 +12,13 @@ import BusinessAcademy from "@/components/BusinessAcademyComponent";
 import TopEmployers from "@/components/TopEmployersComponent";
 import Footer from "@/components/Footer";
 import CityHeader from "@/components/CityHeaderComponent";
+import { Metadata, Viewport } from "next";
+
+export const viewport: Viewport = {
+  initialScale: 1,
+  width: "device-width",
+};
+
 import MainComponentHeader from "@/components/Header";
 
 export default function Home() {
@@ -26,7 +33,7 @@ export default function Home() {
       <Memberships />
       <GlobalSearch />
       <BoardAdvisory />
-      {/* <BusinessEvents /> */}
+      <BusinessEvents />
       <BusinessPartnerships />
       <BusinessAcademy />
       <TopEmployers />

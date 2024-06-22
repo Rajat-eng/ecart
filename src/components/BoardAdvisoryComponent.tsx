@@ -37,27 +37,27 @@ const advisoryOptions = [
 const AdvisoryCard: React.FC<{
   option: { title: string; subtitle: string; image: string };
 }> = ({ option }) => (
-  <div className="bg-layout-blue4 shadow-md rounded-lg grid grid-rows-[minmax(200px,75%)_auto] border-4 h-fit min-w-[400px]">
-    <div className="bg-yellow-200">
+  <div className="bg-layout-blue4 shadow-md rounded-lg overflow-hidden border-2 border-white h-fit w-full">
+    <div className="bg-yellow-200 h-48 overflow-hidden">
       <Image
         src={option.image}
-        alt="image"
+        alt={option.title}
+        // layout="fill"
+        // objectFit="cover"
         width={0}
         height={0}
         sizes="15vw"
-        style={{ width: "100%", height: "auto" }} // optional
+        style={{ width: "100%", height: "100%" }}
       />
     </div>
-    <div className="text-center text-white">
-      <div className="p-2">
-        <h3 className="text-xl font-semibold">{option.title}</h3>
-        <p>{option.subtitle}</p>
-      </div>
-      <div className="border-2 flex">
-        <button className="p-2 flex-1 text-white bg-layout-blue3">
+    <div className="text-center text-white p-4">
+      <h3 className="text-lg font-semibold mb-2">{option.title}</h3>
+      <p className="text-sm mb-4">{option.subtitle}</p>
+      <div className="flex border-t-2 border-white mt-2">
+        <button className="flex-1 py-2 bg-layout-blue3 hover:bg-layout-blue2 transition-colors">
           READ MORE
         </button>
-        <button className="p-2 flex-1 text-white bg-layout-blue2">
+        <button className="flex-1 py-2 bg-layout-blue2 hover:bg-layout-blue3 transition-colors">
           REGISTER NOW
         </button>
       </div>
@@ -70,7 +70,7 @@ const BoardAdvisory: React.FC = () => (
     <h2 className="text-3xl font-extrabold mb-6 text-center text-white">
       BOARD ADVISORY & CONSULTING
     </h2>
-    <div className="flex shadow-lg px-4 gap-4 h-fit justify-center flex-wrap">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 px-4">
       {advisoryOptions.map((option) => (
         <AdvisoryCard key={option.title} option={option} />
       ))}

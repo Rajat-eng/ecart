@@ -1,4 +1,5 @@
 // components/Footer.tsx
+import Image from "next/image";
 import React from "react";
 
 const quickLinks = [
@@ -27,6 +28,21 @@ const partnerships = [
   "Luxury Real Estate",
 ];
 
+interface Icon {
+  id: number;
+  src: string;
+  alt: string;
+}
+
+const icons: Icon[] = [
+  { id: 1, src: "/Images/fb-logo.png", alt: "Facebook" },
+  { id: 2, src: "/Images/instagram-logo.png", alt: "Instagram" },
+  { id: 3, src: "/Images/linkedin-logo.png", alt: "LinkedIn" },
+  { id: 4, src: "/Images/x-logo.png", alt: "Twitter" },
+  { id: 5, src: "/Images/wa-logo.png", alt: "WhatsApp" },
+  { id: 6, src: "/Images/yt-logo.png", alt: "YouTube" },
+];
+
 const Footer: React.FC = () => {
   return (
     <footer className=" bg-layout-blue4  text-white py-10">
@@ -40,6 +56,19 @@ const Footer: React.FC = () => {
               </li>
             ))}
           </ul>
+          <div className="flex space-x-4">
+            {icons.map((icon) => (
+              <a href="#" className="text-xl">
+                <Image
+                  key={icon.id}
+                  src={icon.src}
+                  alt={icon.alt}
+                  width={24}
+                  height={24}
+                />
+              </a>
+            ))}
+          </div>
         </div>
         <div>
           <h2 className="font-semibold mb-4">Get Your Membership</h2>
@@ -113,26 +142,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="container mx-auto px-4 mt-10 flex justify-between items-center border-t border-gray-700 pt-4">
-        <div className="flex space-x-4">
-          <a href="#" className="text-xl">
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a href="#" className="text-xl">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="#" className="text-xl">
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="#" className="text-xl">
-            <i className="fab fa-xing"></i>
-          </a>
-          <a href="#" className="text-xl">
-            <i className="fab fa-whatsapp"></i>
-          </a>
-          <a href="#" className="text-xl">
-            <i className="fab fa-youtube"></i>
-          </a>
-        </div>
+        <div className="flex space-x-4"></div>
         <p className="text-gray-400">
           © 2024 IBA Manpower Consulting Services, India. All Rights Reserved
         </p>

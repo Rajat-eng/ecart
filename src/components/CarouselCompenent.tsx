@@ -23,7 +23,7 @@ const CarouselCompenent = () => {
           <CarouselItem key={index} className="md:basis-1/1 lg:basis-1/1 ">
             <div className="p-1 w-full h-[600px] relative ">
               <Image
-                src={"/Images/c3.jpg"}
+                src={"/Images/c0.png"}
                 alt="image"
                 layout="fill"
                 style={{ objectFit: "cover" }}
