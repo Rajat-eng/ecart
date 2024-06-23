@@ -44,13 +44,14 @@ const AdvisoryCard: React.FC<{
         alt={option.title}
         // layout="fill"
         // objectFit="cover"
+        loading="lazy"
         width={0}
         height={0}
         sizes="15vw"
         style={{ width: "100%", height: "100%" }}
       />
     </div>
-    <div className="text-center text-white p-4">
+    <div className="text-center text-white">
       <h3 className="text-lg font-semibold mb-2">{option.title}</h3>
       <p className="text-sm mb-4">{option.subtitle}</p>
       <div className="flex border-t-2 border-white mt-2">

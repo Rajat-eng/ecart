@@ -34,14 +34,13 @@ const eventsOptions = [
 const EventCard: React.FC<{ option: { title: string; image: string } }> = ({
   option,
 }) => (
-  <div className="flex flex-col items-center shadow-md rounded-lg overflow-hidden h-full">
+  <div className="flex flex-col items-center shadow-md rounded-lg overflow-hidden h-full relative">
     <Image
       src={option.image}
       alt={option.title}
-      width={0}
-      height={0}
-      sizes="15vw"
-      style={{ width: "80%", height: "50%" }}
+      layout="fill"
+      loading="lazy"
+      style={{ objectFit: "cover" }}
     />
     <div className="p-4t text-white ">
       <h3 className="text-lg font-semibold text-center">{option.title}</h3>
@@ -51,7 +50,7 @@ const EventCard: React.FC<{ option: { title: string; image: string } }> = ({
 
 // BusinessEvents component to render the main layout
 const BusinessEvents: React.FC = () => (
-  <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 bg-blue-900 border-4 border-yellow-500">
+  <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 bg-layout-blue5 border-4 border-yellow-500">
     <h2 className="text-3xl font-extrabold text-white mb-6 text-center">
       BUSINESS EVENTS & ENTERTAINMENT
     </h2>

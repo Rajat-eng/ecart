@@ -64,7 +64,7 @@ const partnerships: Partnership[] = [
 
 const BusinessPartnerships: React.FC = () => {
   return (
-    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4 border-4 border-[#fbb000]">
+    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue5 py-4 border-4 border-[#fbb000]">
       <h2 className="text-3xl font-bold text-center mb-8 text-white">
         BUSINESS PARTNERSHIPS & COLLABORATIONS
       </h2>
@@ -74,14 +74,13 @@ const BusinessPartnerships: React.FC = () => {
             key={index}
             className="border-2 grid grid-rows-[minmax(200px,75%)_auto]  h-fit max-w-[400px] w-full"
           >
-            <div className="bg-yellow-200">
+            <div className="bg-yellow-200 relative">
               <Image
                 src={partnership.imageSrc}
                 alt="image"
-                width={0}
-                height={0}
-                sizes="15vw"
-                style={{ width: "100%", height: "auto" }} // optional
+                layout="fill"
+                loading="lazy"
+                style={{ objectFit: "cover", backgroundPosition: "center" }}
               />
             </div>
             <div className="text-center text-white">

@@ -121,7 +121,7 @@ const courses: Course[] = [
 
 const BusinessAcademy: React.FC = () => {
   return (
-    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4 border-4 border-[#fbb000]">
+    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue5 py-4 border-4 border-[#fbb000]">
       <h2 className="text-3xl font-bold text-center mb-8 text-white">
         VRK BUSINESS ACADEMY
       </h2>
@@ -131,33 +131,25 @@ const BusinessAcademy: React.FC = () => {
             key={index}
             className="border-2 grid grid-rows-[minmax(200px,75%)_auto]  h-fit max-w-[400px] w-full"
           >
-            <div className="bg-yellow-200">
+            <div className="bg-yellow-200 relative">
               {" "}
               <Image
                 src={course.imageSrc}
                 alt="image"
-                width={0}
-                height={0}
-                sizes="15vw"
-                style={{ width: "100%", height: "auto" }} // optional
+                layout="fill"
+                style={{ objectFit: "cover" }}
               />
             </div>
             <div className="text-center text-white">
               <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
               <p className="text-sm mb-4">{course.description}</p>
-              <div className="flex justify-between">
-                <a
-                  href={course.readMoreLink}
-                  className="text-blue-300 hover:text-blue-500"
-                >
+              <div className="flex">
+                <button className="p-2 flex-1 text-white bg-layout-blue3">
                   READ MORE
-                </a>
-                <a
-                  href={course.registerLink}
-                  className="bg-blue-700 hover:bg-blue-600 text-white py-2 px-4 rounded"
-                >
+                </button>
+                <button className="p-2 flex-1 text-white bg-layout-blue2">
                   REGISTER NOW
-                </a>
+                </button>
               </div>
             </div>
           </div>

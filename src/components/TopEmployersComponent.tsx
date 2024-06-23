@@ -1,7 +1,8 @@
 // components/TopEmployers.tsx
 
 import React from "react";
-
+import Link from "next/link";
+import Image from "next/image";
 type Employer = {
   name: string;
   logoSrc: string;
@@ -225,25 +226,29 @@ const employers: Employer[] = [
 
 const TopEmployers: React.FC = () => {
   return (
-    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue4 py-4 border-4 border-[#fbb000]">
+    <div className="mx-auto w-11/12  my-8 min-h-fit bg-layout-blue5 py-4 border-4 border-[#fbb000]">
       <h2 className="text-3xl font-bold text-center mb-8 text-white">
         TOP EMPLOYERS
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-6 px-4 justify-items-center">
         {employers.map((employer, index) => (
-          <a
+          <Link
             key={index}
             href={employer.websiteLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center bg-white p-2 rounded-lg shadow-lg w-3/4"
+            className="border-2 w-full h-32 shadow-lg "
           >
-            <img
-              src={employer.logoSrc}
-              alt={employer.name}
-              className="max-h-16 max-w-full object-contain"
-            />
-          </a>
+            <div className="rounded-lg w-full h-full relative">
+              <Image
+                src={employer.logoSrc}
+                alt={employer.name}
+                layout="fill"
+                loading="lazy"
+                style={{ objectFit: "fill", backgroundPosition: "center" }}
+              />
+            </div>
+          </Link>
         ))}
       </div>
     </div>

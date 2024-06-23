@@ -86,18 +86,19 @@ const Memberships: React.FC = () => {
             key={membership.membership_name}
             className="border-2 grid grid-rows-[minmax(200px,75%)_auto] w-full max-w-[400px] h-fit"
           >
-            <div className="bg-yellow-200">
+            <div className="bg-yellow-200 relative">
               <Image
                 src={membership.img_src}
                 alt="image"
-                width={0}
-                height={0}
-                sizes="15vw"
-                style={{ width: "100%", height: "auto" }}
+                layout="fill"
+                loading="lazy"
+                style={{ objectFit: "cover", backgroundPosition: "center" }}
               />
             </div>
-            <div className="text-white bg-layout-blue4">
-              <p className="text-center">{membership.membership_name}</p>
+            <div className="text-white bg-layout-blue5">
+              <p className="text-center font-bold">
+                {membership.membership_name}
+              </p>
               <p className="text-center">Business Network</p>
               <div className="w-full text-center bg-layout-blue2">
                 MEMBERSHIP OPEN

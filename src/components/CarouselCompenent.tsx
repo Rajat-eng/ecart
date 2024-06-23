@@ -28,7 +28,7 @@ const CarouselCompenent = () => {
                 layout="fill"
                 style={{ objectFit: "cover" }}
               />
-              <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center justify-end p-10 gap-10 w-full">
+              {/* <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center justify-end p-10 gap-10 w-full">
                 <p className="text-white text-6xl">
                   International Business Advantage
                 </p>
@@ -40,7 +40,7 @@ const CarouselCompenent = () => {
                     <li key={index} className="w-2 h-2 text-white"></li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
             </div>
           </CarouselItem>
         ))}

@@ -45,7 +45,7 @@ const icons: Icon[] = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" bg-layout-blue4  text-white py-10">
+    <footer className=" bg-layout-blue5  text-white py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
         <div>
           <h2 className="font-semibold mb-4">Quick Links</h2>
@@ -57,8 +57,8 @@ const Footer: React.FC = () => {
             ))}
           </ul>
           <div className="flex space-x-4">
-            {icons.map((icon) => (
-              <a href="#" className="text-xl">
+            {icons.map((icon, index) => (
+              <a href="#" className="text-xl" key={index}>
                 <Image
                   key={icon.id}
                   src={icon.src}
